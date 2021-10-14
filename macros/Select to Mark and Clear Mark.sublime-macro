@@ -1,0 +1,11 @@
+[
+  {
+    "command": "select_to_mark"
+  },
+  {
+    "command": "clear_bookmarks",
+    "args": {
+        "name": "mark"
+    }
+  }
+]

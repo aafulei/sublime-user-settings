@@ -1,0 +1,6 @@
+*.hidden-*
+*.old
+*.user-ca-bundle
+.DS_Store
+__pycache__
+i_opener_history.sublime-settings

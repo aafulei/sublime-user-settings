@@ -1,0 +1,10 @@
+{
+    "extensions": [
+        "cc",
+        "cpp",
+        "cxx",
+        "hpp",
+        "hxx"
+    ],
+    "tab_size": 2
+}

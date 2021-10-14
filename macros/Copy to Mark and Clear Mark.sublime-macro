@@ -1,0 +1,20 @@
+[
+  {
+    "command": "select_to_mark"
+  },
+  {
+    "command": "copy"
+  },
+  {
+    "command": "clear_bookmarks",
+    "args": {
+        "name": "mark"
+    }
+  },
+  {
+    "command": "change_selection_endpoint"
+  },
+  {
+    "command": "deselect"
+  }
+]

@@ -1,0 +1,48 @@
+{
+	"bootstrapped": true,
+	"debug": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoHotkey",
+		"Clang Format",
+		"CMake",
+		"Compare Side-By-Side",
+		"Deselect",
+		"Exact Quick Find",
+		"Expand Selection to Line Upwards",
+		"Expand Selection to Quotes",
+		"ExpandRegion",
+		"Fold Comments",
+		"HexViewer",
+		"iOpener",
+		"MarkAndMove",
+		"Move By Paragraph",
+		"MoveTab",
+		"OpenHere",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"PlantUmlDiagrams",
+		"Pretty JSON",
+		"RemoteSubl",
+		"Save Copy As",
+		"SideBarTools",
+		"sublime-adapted-plugins",
+		"sublime-expand-and-edit",
+		"SublimeLinter",
+		"SublimeLinter-pycodestyle",
+		"Switch View in Group",
+		"ToggleSettings",
+		"zzz A File Icon zzz"
+	],
+	"remove_orphaned": true,
+	"repositories":
+	[
+		"https://github.com/aafulei/sublime-expand-and-edit",
+		"https://github.com/aafulei/sublime-adapted-plugins"
+	]
+}

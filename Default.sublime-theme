@@ -1,0 +1,9 @@
+ [
+      // Status Bar Label
+      {
+          "class": "label_control",
+          "parents": [ { "class": "status_bar" } ],
+          // "color": [ 130, 0, 0 ],
+          "font.size" : 14
+      }
+  ]

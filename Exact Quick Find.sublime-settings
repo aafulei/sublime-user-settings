@@ -1,0 +1,22 @@
+{
+	"debug": false,
+	"debug_blocklist":
+	[
+	],
+	"debug_watchlist":
+	[
+	],
+	"default_case_sensitive": true,
+	"default_whole_word": true,
+	"default_wrap_scan": true,
+	"flip_case_sensitive": true,
+	"flip_whole_word": true,
+	"flip_wrap_scan": true,
+	"indicator": "icon",
+	"save_flags_on_save": false,
+	"show_alert": true,
+	"show_notice": true,
+	"show_tilde": true,
+	"wrap_scan_flag_char": "R",
+	"wrap_scan_flag_position": 3
+}

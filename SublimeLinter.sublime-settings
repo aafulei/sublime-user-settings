@@ -1,0 +1,16 @@
+// SublimeLinter Settings - User
+{
+   "linters": {
+        "pycodestyle": {
+            "executable": "pycodestyle",
+            "disable": false
+        }
+    },
+    "statusbar.show_active_linters": false,
+    "styles": [
+        {
+            "icon": "none",
+            "mark_style": "fill"
+        }
+    ]
+}
