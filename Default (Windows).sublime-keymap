@@ -10,6 +10,7 @@
 
 // ===== Packages =====================================================================================================
 // [P] A File Icon
+// [P] Change Selection Point (Adapted)
 // [P] Clang Format
 // [P] Deselect
 // [P] Expand Selection to Line Upwards
@@ -287,7 +288,7 @@
     { "keys": ["alt+j"], "command": "jump_back" },
     { "keys": ["alt+k"], "command": "next_modification" },
     { "keys": ["alt+l"], "command": "jump_forward" },
-    { "keys": ["alt+m"], "command": "change_selection_endpoint" },
+    { "keys": ["alt+m"], "command": "change_selection_endpoint" }, // [P] Change Selection Point
     { "keys": ["alt+n"], "command": "find_next" },
     { "keys": ["alt+o"], "command": "goto_last_edit", "args": { "reverse": true } }, // [P] Goto Last Edit
     { "keys": ["alt+p"], "command": "find_prev" },
