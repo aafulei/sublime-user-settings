@@ -6,15 +6,15 @@
     "command": "copy"
   },
   {
-    "command": "clear_bookmarks",
-    "args": {
-        "name": "mark"
-    }
-  },
-  {
     "command": "change_selection_endpoint"
   },
   {
     "command": "deselect"
+  },
+  {
+    "command": "clear_bookmarks",
+    "args": {
+        "name": "mark"
+    }
   }
 ]
