@@ -13,6 +13,7 @@
 		"Compare Side-By-Side",
 		"Deselect",
 		"Exact Quick Find",
+		"Expand and Edit",
 		"Expand Selection to Line Upwards",
 		"Expand Selection to Quotes",
 		"ExpandRegion",
@@ -32,7 +33,6 @@
 		"Save Copy As",
 		"SideBarTools",
 		"sublime-adapted-plugins",
-		"sublime-expand-and-edit",
 		"SublimeLinter",
 		"SublimeLinter-pycodestyle",
 		"Switch View in Group",
@@ -42,7 +42,6 @@
 	"remove_orphaned": true,
 	"repositories":
 	[
-		"https://github.com/aafulei/sublime-expand-and-edit",
 		"https://github.com/aafulei/sublime-adapted-plugins"
 	]
 }
