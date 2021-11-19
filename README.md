@@ -11,9 +11,11 @@ The `User` directory of my Sublime Text, including
 
 ## Install
 
+#### macOS
+
 *Prerequisite - Package Control*
 
-#### macOS
+`Tools > Install Package Control`
 
 ```sh
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
@@ -22,6 +24,10 @@ git clone http://github.com/aafulei/sublime-user-settings.git User
 ```
 
 #### Windows
+
+*Prerequisite - Package Control*
+
+`Tools > Install Package Control`
 
 ```bat
 cd %APPDATA%\Sublime Text 3\Packages
