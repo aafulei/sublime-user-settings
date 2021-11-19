@@ -20,7 +20,7 @@ The `User` directory of my Sublime Text, including
 ```sh
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 [ -d "User" ] && mv User User.old && echo "Move directory User ===> User.old"
-git clone http://github.com/aafulei/sublime-user-settings.git User
+git clone https://github.com/aafulei/sublime-user-settings.git User
 ```
 
 #### Windows
@@ -32,7 +32,7 @@ git clone http://github.com/aafulei/sublime-user-settings.git User
 ```bat
 cd %APPDATA%\Sublime Text 3\Packages
 if exist User (move /Y User User.old) && (echo "Move directory User ===> User.old")
-git clone http://github.com/aafulei/sublime-user-settings.git User
+git clone https://github.com/aafulei/sublime-user-settings.git User
 ```
 
 ## Automate
