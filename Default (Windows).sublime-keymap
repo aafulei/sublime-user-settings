@@ -245,11 +245,14 @@
     { "keys": ["primary+k", "primary+z"], "command": "permute_lines", "args": { "operation": "reverse" } },
     { "keys": ["primary+k", "primary+;"], "command": "expand_swap_word" }, // [P] Expand and Edit
     { "keys": ["primary+k", "primary+'"], "command": "expand_swap_subword" }, // [P] Expand and Edit
+    { "keys": ["primary+k", "primary+/"], "command": "toggle_fold_comments" },
     { "keys": ["primary+k", "primary+`"], "command": "unfold_all" },
     { "keys": ["primary+k", "primary+1"], "command": "fold_by_level", "args": { "level": 1 } },
     { "keys": ["primary+k", "primary+2"], "command": "fold_by_level", "args": { "level": 2 } },
     { "keys": ["primary+k", "primary+3"], "command": "fold_by_level", "args": { "level": 3 } },
     { "keys": ["primary+k", "primary+4"], "command": "fold_by_level", "args": { "level": 4 } },
+    { "keys": ["primary+k", "primary+7", "primary+8"], "command": "wrap_lines", "args": { "width": 78 } },
+    { "keys": ["primary+k", "primary+7", "primary+9"], "command": "wrap_lines", "args": { "width": 79 } },
     { "keys": ["primary+k", "primary+8"], "command": "wrap_lines", "args": { "width": 79 } },
     { "keys": ["primary+k", "primary+9"], "command": "wrap_lines", "args": { "width": 99 } },
     { "keys": ["primary+k", "primary+0"], "command": "wrap_lines", "args": { "width": 119 } },
@@ -351,7 +354,6 @@
     { "keys": ["primary+alt+o"], "command": "toggle_overwrite" },
     { "keys": ["primary+alt+["], "command": "fold" },
     { "keys": ["primary+alt+]"], "command": "unfold" },
-    { "keys": ["primary+alt+\\"], "command": "toggle_fold_comments" },
     { "keys": ["primary+alt+;"], "command": "expand_displace_word" }, // [P] Expand and Edit
     { "keys": ["primary+alt+'"], "command": "expand_displace_subword" }, // [P] Expand and Edit
     { "keys": ["primary+alt+1"], "command": "set_setting", "args": { "setting": "tab_size", "value": 1 } },
