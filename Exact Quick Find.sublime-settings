@@ -6,8 +6,8 @@
 	"debug_watchlist":
 	[
 	],
-	"default_case_sensitive": true,
-	"default_whole_word": true,
+	"default_case_sensitive": false,
+	"default_whole_word": false,
 	"default_wrap_scan": true,
 	"flip_case_sensitive": true,
 	"flip_whole_word": true,
