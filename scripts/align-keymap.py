@@ -5,16 +5,34 @@
 # standard
 import argparse
 import os
+import platform
 import shutil
 
 # self
 import common
 
 
-DESC = "Align Linux and Windows Keymaps with macOS Keymap"
 MACOS = "Default (OSX).sublime-keymap"
 LINUX = "Default (Linux).sublime-keymap"
 WINDOWS = "Default (Windows).sublime-keymap"
+
+
+# platform.system() returns Linux, Darwin, Java, Windows or an empty string
+SYSTEM = platform.system()
+if SYSTEM == "Darwin":
+    SYSTEM = "macOS"
+    TO_SYS = "Windows"
+    SOURCE = MACOS
+    TARGET = WINDOWS
+elif SYSTEM == "Windows":
+    TO_SYS = "macOS"
+    SOURCE = WINDOWS
+    TARGET = MACOS
+else:
+    SOURCE = TARGET = ""
+
+ERROR = f"Unsupported system \"{SYSTEM}\". Only supports macOS <---> Windows."
+DESC = f"Align Linux and {TO_SYS} Keymaps with {SYSTEM} Keymap"
 
 
 def _append(log, lineno, old, new):
@@ -28,7 +46,11 @@ def _append(log, lineno, old, new):
 
 
 def main():
-    # 0. ask for confirmation
+    # 0. check target system and ask for confirmation
+    if not TARGET:
+        print(ERROR)
+        return
+
     if not common.confirm(desc=DESC):
         return
 
@@ -36,25 +58,22 @@ def main():
     os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 
     # 2. check file existence
-    if not common.check_existence([MACOS, LINUX, WINDOWS], required=[MACOS]):
+    if not common.check_existence([LINUX, MACOS, WINDOWS], required=[SOURCE]):
         return
 
-    # 3. macOS keymap ===> Linux keymap
-    common.copy(MACOS, LINUX)
-
-    # 4. Create a temp Windows keymap
-    tmp = "{}.tmp".format(WINDOWS)
+    # 3. Create a temp target keymap
+    tmp = "{}.tmp".format(TARGET)
     log = ""
-    with common.Prompt("% Create a temp Windows keymap"):
-        with open(MACOS, "r") as ifile:
+    with common.Prompt(f"% Create a temp {TO_SYS} keymap"):
+        with open(SOURCE, "r") as ifile:
             with open(tmp, "w") as ofile:
                 for lineno, line in enumerate(ifile):
                     ls = line.strip()
-                    if ls.startswith("//") and ls.endswith("Windows"):
+                    if ls.startswith("//") and ls.endswith(TO_SYS):
                         new = line.replace("// ", "", 1)
                         log = _append(log, lineno, line, new)
                         ofile.write(new)
-                    elif not ls.startswith("//") and ls.endswith("macOS"):
+                    elif not ls.startswith("//") and ls.endswith(SYSTEM):
                         new = line.replace("{", "// {", 1)
                         log = _append(log, lineno, line, new)
                         ofile.write(new)
@@ -62,8 +81,11 @@ def main():
                         ofile.write(line)
     print(log, end="")
 
-    # 5. temp Windows keymap ===> Windows keymap
-    common.move(tmp, WINDOWS)
+    # 4. temp target keymap ===> target keymap
+    common.move(tmp, TARGET)
+
+    # 5. macOS keymap ===> Linux keymap
+    common.copy(MACOS, LINUX)
 
 
 if __name__ == "__main__":

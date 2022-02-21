@@ -37,11 +37,20 @@ git clone https://github.com/aafulei/sublime-user-settings.git User
 
 ## Automate
 
-### 1. Align Linux and Windows Keymaps with macOS Keymap
+### 1. Align Key Bindings Between macOS and Windows
+
+#### macOS
 
 ```sh
 ./scripts/align-keymap.py
 ```
+
+#### Windows
+
+```bat
+python align-keymap.py
+```
+
 
 #### Sample Run
 
