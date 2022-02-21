@@ -3,6 +3,7 @@
 	"debug": true,
 	"in_process_packages":
 	[
+		"OpenHere"
 	],
 	"installed_packages":
 	[
@@ -16,7 +17,6 @@
 		"Expand and Edit",
 		"Expand Selection to Line Upwards",
 		"Expand Selection to Quotes",
-		"ExpandRegion",
 		"Fold Comments",
 		"HexViewer",
 		"iOpener",

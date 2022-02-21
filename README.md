@@ -111,9 +111,9 @@ CMake
 Compare Side-By-Side
 Deselect
 Exact Quick Find
+Expand and Edit
 Expand Selection to Line Upwards
 Expand Selection to Quotes
-ExpandRegion
 Fold Comments
 HexViewer
 iOpener
@@ -130,7 +130,6 @@ RemoteSubl
 Save Copy As
 SideBarTools
 sublime-adapted-plugins
-sublime-expand-and-edit
 SublimeLinter
 SublimeLinter-pycodestyle
 Switch View in Group
