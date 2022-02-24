@@ -287,10 +287,10 @@
     { "keys": ["primary+alt+="], "command": "expand_tabs", "args": { "set_translate_tabs": true } },
 
     // ===== ALT + Family =============================================================================================
-    { "keys": ["alt+a"], "command": "move", "args": { "by": "subwords", "forward": false } },
+    { "keys": ["alt+a"], "command": "move", "args": { "by": "words", "forward": false } },
     { "keys": ["alt+c"], "command": "exact_quick_find_toggle_case_sensitive" },  // [P] Exact Quick Find
     { "keys": ["alt+c"], "command": "toggle_case_sensitive", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
-    { "keys": ["alt+d"], "command": "expand_selection_to_subword" }, // [P] Expand and Edit
+    { "keys": ["alt+d"], "command": "move", "args": { "by": "words", "forward": true } },
     // ----- "alt+e" is tied to giving accents (e.g. é) in macOS ------------------------------------------------------
     { "keys": ["alt+f"], "command": "exact_quick_find_flip_find_flags" }, // [P] Exact Quick Find
     { "keys": ["alt+h"], "command": "select_lines", "args": { "forward": true } },
@@ -305,7 +305,7 @@
     { "keys": ["alt+q"], "command": "delete_word", "args": { "forward": true } },
     { "keys": ["alt+r"], "command": "exact_quick_find_toggle_wrap_scan" }, // [P] Exact Quick Find
     { "keys": ["alt+r"], "command": "toggle_wrap", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
-    { "keys": ["alt+s"], "command": "move", "args": { "by": "subwords", "forward": true } },
+    { "keys": ["alt+s"], "command": "move", "args": { "by": "word_ends", "forward": true } },
     { "keys": ["alt+u"], "command": "goto_last_edit" }, // [P] Goto Last Edit
     { "keys": ["alt+w"], "command": "exact_quick_find_toggle_whole_word" }, // [P] Exact Quick Find
     { "keys": ["alt+w"], "command": "toggle_whole_word", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
