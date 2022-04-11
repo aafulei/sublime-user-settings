@@ -1,4 +1,4 @@
-// =====  Macros ======================================================================================================
+// =====  Macros =======================================================================================================
 // [M] Add Line
 // [M] Add Line Before
 // [M] Copy to Mark and Clear Mark
@@ -12,7 +12,7 @@
 // [M] Paste to Mark and Clear Mark
 // [M] Select to Mark and Clear Mark
 
-// ===== Packages =====================================================================================================
+// ===== Packages ======================================================================================================
 // [P] A File Icon
 // [P] Change Selection Point (Adapted)
 // [P] Clang Format
@@ -35,7 +35,7 @@
 // [P] ToggleSettings
 
 [
-    // ===== LEFT and RIGHT ===========================================================================================
+    // ===== LEFT and RIGHT ============================================================================================
     { "keys": ["left"], "command": "move", "args": { "by": "characters", "forward": false } },
     { "keys": ["right"], "command": "move", "args": { "by": "characters", "forward": true } },
     { "keys": ["shift+left"], "command": "move", "args": { "by": "characters", "forward": false, "extend": true } },
@@ -49,7 +49,7 @@
     { "keys": ["alt+shift+left"], "command": "move", "args": { "by": "subwords", "forward": false, "extend": true } },
     { "keys": ["alt+shift+right"], "command": "move", "args": { "by": "subword_ends", "forward": true, "extend": true } },
 
-    // ===== UP and DOWN ==============================================================================================
+    // ===== UP and DOWN ===============================================================================================
     { "keys": ["up"], "command": "move", "args": { "by": "lines", "forward": false } },
     { "keys": ["down"], "command": "move", "args": { "by": "lines", "forward": true } },
     { "keys": ["shift+up"], "command": "move", "args": { "by": "lines", "forward": false, "extend": true } },
@@ -61,7 +61,7 @@
     { "keys": ["alt+up"], "command": "scroll_lines", "args": { "amount": -1.0 } },
     { "keys": ["alt+down"], "command": "scroll_lines", "args": { "amount": 1.0 } },
 
-    // ===== HOME and END =============================================================================================
+    // ===== HOME and END ==============================================================================================
     { "keys": ["home"], "command": "move_to", "args": { "to": "bol", "extend": false } },
     { "keys": ["end"], "command": "move_to", "args": { "to": "eol", "extend": false } },
     { "keys": ["shift+home"], "command": "move_to", "args": { "to": "bol", "extend": true } },
@@ -79,7 +79,7 @@
     { "keys": ["primary+alt+shift+home"], "command": "move_to", "args": { "to": "bof", "extend": true } },
     { "keys": ["primary+alt+shift+end"], "command": "move_to", "args": { "to": "eof", "extend": true } },
 
-    // ===== BACKSPACE and DELETE =====================================================================================
+    // ===== BACKSPACE and DELETE ======================================================================================
     { "keys": ["backspace"], "command": "left_delete" },
     { "keys": ["delete"], "command": "right_delete" },
     { "keys": ["primary+backspace"], "command": "delete_word", "args": { "forward": false } },
@@ -89,10 +89,10 @@
     { "keys": ["primary+shift+backspace"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete to BOL.sublime-macro" } },
     { "keys": ["primary+shift+delete"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete to EOL.sublime-macro" } },
 
-    // ===== ESCAPE ===================================================================================================
+    // ===== ESCAPE ====================================================================================================
     { "keys": ["escape"], "command": "deselect", "context": [ { "key": "num_selections", "operator": "equal", "operand": 1 }, { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true } ] }, // [P] Deselect
 
-    // ===== ENTER ====================================================================================================
+    // ===== ENTER =====================================================================================================
     { "keys": ["primary+enter"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Add Line.sublime-macro" } },
     { "keys": ["primary+shift+enter"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Add Line Before.sublime-macro" } },
     // ----- find -----------------------------------------------------------------------------------------------------
@@ -111,11 +111,11 @@
     { "keys": ["enter"], "command": "find_all", "context": [ { "key": "panel", "operand": "find_in_files" }, { "key": "panel_has_focus" } ] },
     { "keys": ["primary+alt+enter"], "command": "replace_all", "context": [ { "key": "panel", "operand": "find_in_files" }, { "key": "panel_has_focus" } ] },
 
-    // ===== TAB ======================================================================================================
+    // ===== TAB =======================================================================================================
     { "keys": ["ctrl+tab"], "command": "next_view_in_group" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view_in_group" },
 
-    // ===== PRIMARY + Family =========================================================================================
+    // ===== PRIMARY + Family ==========================================================================================
     { "keys": ["primary+a"], "command": "select_all" },
     { "keys": ["primary+b"], "command": "exact_quick_find_goto_prev" }, // [P] Exact Quick Find
     { "keys": ["primary+c"], "command": "copy" },
@@ -164,7 +164,7 @@
     { "keys": ["primary+-"], "command": "decrease_font_size" },
     { "keys": ["primary+="], "command": "increase_font_size" },
 
-    // ===== PRIMARY + SHIFT + Family =================================================================================
+    // ===== PRIMARY + SHIFT + Family ==================================================================================
     { "keys": ["primary+shift+a"], "command": "prompt_add_folder" },
     { "keys": ["primary+shift+b"], "command": "exact_quick_find_add_prev" }, // [P] Exact Quick Find
     { "keys": ["primary+shift+d"], "command": "duplicate_line" },
@@ -199,7 +199,7 @@
     { "keys": ["primary+shift+6"], "command": "exact_quick_find_subtract_this" }, // [P] Exact Quick Find
     { "keys": ["primary+shift+7"], "command": "exact_quick_find_invert_select_this" }, // [P] Exact Quick Find
 
-    // ===== PRIMARY + K, PRIMARY + Family ============================================================================
+    // ===== PRIMARY + K, PRIMARY + Family =============================================================================
     { "keys": ["primary+k", "primary+a"], "command": "sort_lines", "args": { "case_sensitive": false } },
     { "keys": ["primary+k", "primary+b"], "command": "toggle_side_bar" },
     { "keys": ["primary+k", "primary+c"], "command": "select_color_scheme" },
@@ -254,7 +254,7 @@
     { "keys": ["primary+k", "primary+home"], "command": "move_tab", "args": { "position": "0" } }, // [P] MoveTab
     { "keys": ["primary+k", "primary+end"], "command": "move_tab", "args": { "position": "999" } }, // [P] MoveTab
 
-    // ===== PRIMARY + K, PRIMARY + SHIFT + Family ====================================================================
+    // ===== PRIMARY + K, PRIMARY + SHIFT + Family =====================================================================
     { "keys": ["primary+k", "primary+shift+a"], "command": "permute_lines", "args": { "operation": "reverse" } },
     { "keys": ["primary+k", "primary+shift+c"], "command": "select_theme" },
     { "keys": ["primary+k", "primary+shift+f"], "command": "clang_format" }, // [P] Clang Format
@@ -265,7 +265,7 @@
     { "keys": ["primary+k", "primary+shift+p"], "command": "open_file", "args": {"file": "${packages}/User/Package Control.sublime-settings"} },
     { "keys": ["primary+k", "primary+shift+u"], "command": "permute_lines", "args": { "operation": "unique" } },
 
-    // ===== PRIMARY + ALT + Family ===================================================================================
+    // ===== PRIMARY + ALT + Family ====================================================================================
     { "keys": ["primary+alt+d"], "command": "exact_quick_find_add_all" }, // [P] Exact Quick Find
     { "keys": ["primary+alt+l"], "command": "split_selection_into_lines" },
     { "keys": ["primary+alt+o"], "command": "toggle_overwrite" },
@@ -286,11 +286,10 @@
     { "keys": ["primary+alt+-"], "command": "unexpand_tabs", "args": { "set_translate_tabs": true } },
     { "keys": ["primary+alt+="], "command": "expand_tabs", "args": { "set_translate_tabs": true } },
 
-    // ===== ALT + Family =============================================================================================
-    { "keys": ["alt+a"], "command": "move", "args": { "by": "words", "forward": false } },
+    // ===== ALT + Family ==============================================================================================
     { "keys": ["alt+c"], "command": "exact_quick_find_toggle_case_sensitive" },  // [P] Exact Quick Find
     { "keys": ["alt+c"], "command": "toggle_case_sensitive", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
-    { "keys": ["alt+d"], "command": "move", "args": { "by": "words", "forward": true } },
+    { "keys": ["alt+d"], "command": "expand_selection_to_subword" },
     // ----- "alt+e" is tied to giving accents (e.g. é) in macOS ------------------------------------------------------
     { "keys": ["alt+f"], "command": "exact_quick_find_flip_find_flags" }, // [P] Exact Quick Find
     { "keys": ["alt+h"], "command": "select_lines", "args": { "forward": true } },
@@ -305,7 +304,6 @@
     { "keys": ["alt+q"], "command": "delete_word", "args": { "forward": true } },
     { "keys": ["alt+r"], "command": "exact_quick_find_toggle_wrap_scan" }, // [P] Exact Quick Find
     { "keys": ["alt+r"], "command": "toggle_wrap", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
-    { "keys": ["alt+s"], "command": "move", "args": { "by": "word_ends", "forward": true } },
     { "keys": ["alt+u"], "command": "goto_last_edit" }, // [P] Goto Last Edit
     { "keys": ["alt+w"], "command": "exact_quick_find_toggle_whole_word" }, // [P] Exact Quick Find
     { "keys": ["alt+w"], "command": "toggle_whole_word", "context": [ { "key": "setting.is_widget", "operator": "equal", "operand": true } ] },
@@ -324,7 +322,7 @@
     { "keys": ["alt+9"], "command": "select_by_index", "args": { "index": 8 } },
     { "keys": ["alt+0"], "command": "select_by_index", "args": { "index": 9 } },
 
-    // ===== ALT + SHIFT + Family =====================================================================================
+    // ===== ALT + SHIFT + Family ======================================================================================
     { "keys": ["alt+shift+["], "command": "move_tab", "args": { "position": "-1" } }, // [P] MoveTab
     { "keys": ["alt+shift+]"], "command": "move_tab", "args": { "position": "+1" } }, // [P] MoveTab
     { "keys": ["alt+shift+`"], "command": "set_layout", "args": { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [ [0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2] ] } },
@@ -334,7 +332,7 @@
     { "keys": ["alt+shift+4"], "command": "set_layout", "args": { "cols": [0.0, 1.0], "rows": [0.0, 0.25, 0.5, 0.75, 1.0], "cells": [ [0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3], [0, 3, 1, 4] ] } },
     { "keys": ["alt+shift+5"], "command": "set_layout", "args": { "cols": [0.0, 1.0], "rows": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0], "cells": [ [0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3], [0, 3, 1, 4], [0, 4, 1, 5] ] } },
 
-    // ===== [P] Origami ==============================================================================================
+    // ===== [P] Origami ===============================================================================================
     { "keys": ["primary+k", "primary+up"], "command": "travel_to_pane", "args": { "direction": "up" } }, // [P] Origami
     { "keys": ["primary+k", "primary+left"], "command": "travel_to_pane", "args": { "direction": "left" } }, // [P] Origami
     { "keys": ["primary+k", "primary+down"], "command": "travel_to_pane", "args": { "direction": "down" } }, // [P] Origami
@@ -345,7 +343,7 @@
     { "keys": ["primary+k", "primary+shift+down"], "command": "carry_file_to_pane", "args": { "direction": "down" } }, // [P] Origami
     { "keys": ["primary+k", "primary+shift+right"], "command": "carry_file_to_pane", "args": { "direction": "right" } }, // [P] Origami
 
-    // ===== [P] Clear Up Pollution by Origami ========================================================================
+    // ===== [P] Clear Up Pollution by Origami =========================================================================
     { "keys": ["primary+k", "left"], "command": "move", "args": { "by": "characters", "forward": false } },
     { "keys": ["primary+k", "right"], "command": "move", "args": { "by": "characters", "forward": true } },
     { "keys": ["primary+k", "up"], "command": "move", "args": { "by": "lines", "forward": false } },
@@ -361,7 +359,7 @@
     { "keys": ["primary+k", "alt+shift+left"], "command": "move", "args": { "by": "subwords", "forward": false, "extend": true } },
     { "keys": ["primary+k", "alt+shift+right"], "command": "move", "args": { "by": "subword_ends", "forward": true, "extend": true } },
 
-    // ===== macOS Only ===============================================================================================
+    // ===== macOS Only ================================================================================================
     { "keys": ["control+a"], "command": "move_to", "args": { "to": "hardbol", "extend": false } }, // macOS
     { "keys": ["control+e"], "command": "move_to", "args": { "to": "hardeol", "extend": false } }, // macOS
     { "keys": ["control+k"], "command": "run_macro_file", "args": { "file": "res://Packages/Default/Delete to EOL.sublime-macro" } }, // macOS
