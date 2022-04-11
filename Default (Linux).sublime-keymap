@@ -234,12 +234,9 @@
     { "keys": ["primary+k", "primary+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["primary+k", "primary+x"], "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" } },
     { "keys": ["primary+k", "primary+y"], "command": "yank" },
-    { "keys": ["primary+k", "primary+'", "primary+p"], "command": "expand_paste_subword" }, // [P] Expand and Edit
-    { "keys": ["primary+k", "primary+'", "primary+t"], "command": "expand_swap_subword" }, // [P] Expand and Edit
-    { "keys": ["primary+k", "primary+'", "primary+x"], "command": "expand_cut_subword" }, // [P] Expand and Edit
-    { "keys": ["primary+k", "primary+;", "primary+p"], "command": "expand_paste_word" }, // [P] Expand and Edit
-    { "keys": ["primary+k", "primary+;", "primary+t"], "command": "expand_swap_word" }, // [P] Expand and Edit
-    { "keys": ["primary+k", "primary+;", "primary+x"], "command": "expand_cut_word" }, // [P] Expand and Edit
+    { "keys": ["primary+k", "primary+z"], "command": "cancel_swap" },
+    { "keys": ["primary+k", "primary+;"], "command": "expand_swap_word" }, // [P] Expand and Edit
+    { "keys": ["primary+k", "primary+'"], "command": "expand_swap_subword" }, // [P] Expand and Edit
     { "keys": ["primary+k", "primary+.", "primary+c"], "command": "run_macro_file", "args": { "file": "res://Packages/User/macros/Copy to Mark and Clear Mark.sublime-macro" } },
     { "keys": ["primary+k", "primary+.", "primary+d"], "command": "run_macro_file", "args": { "file": "res://Packages/User/macros/Delete to Mark and Clear Mark.sublime-macro" } },
     { "keys": ["primary+k", "primary+.", "primary+e"], "command": "run_macro_file", "args": { "file": "res://Packages/User/macros/Select to Mark and Clear Mark.sublime-macro" } },
@@ -264,6 +261,8 @@
     { "keys": ["primary+k", "primary+shift+s"], "command": "save_copy_as" }, // [P] Save Copy As
     { "keys": ["primary+k", "primary+shift+p"], "command": "open_file", "args": {"file": "${packages}/User/Package Control.sublime-settings"} },
     { "keys": ["primary+k", "primary+shift+u"], "command": "permute_lines", "args": { "operation": "unique" } },
+    { "keys": ["primary+k", "primary+shift+;"], "command": "expand_paste_word" }, // [P] Expand and Edit
+    { "keys": ["primary+k", "primary+shift+'"], "command": "expand_paste_subword" }, // [P] Expand and Edit
 
     // ===== PRIMARY + ALT + Family ====================================================================================
     { "keys": ["primary+alt+d"], "command": "exact_quick_find_add_all" }, // [P] Exact Quick Find
@@ -310,6 +309,8 @@
     { "keys": ["alt+y"], "command": "select_lines", "args": { "forward": false } },
     { "keys": ["alt+["], "command": "prev_view_in_group" }, // [P] Switch View in Group
     { "keys": ["alt+]"], "command": "next_view_in_group" }, // [P] Switch View in Group
+    { "keys": ["alt+;"], "command": "expand_cut_word" }, // [P] Expand and Edit
+    { "keys": ["alt+'"], "command": "expand_cut_subword" }, // [P] Expand and Edit
     { "keys": ["alt+`"], "command": "show_panel", "args": { "panel": "console", "toggle": true } },
     { "keys": ["alt+1"], "command": "select_by_index", "args": { "index": 0 } },
     { "keys": ["alt+2"], "command": "select_by_index", "args": { "index": 1 } },
