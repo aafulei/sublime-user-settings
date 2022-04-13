@@ -47,7 +47,7 @@
 // [P] SublimeLinter
 // [P] SublimeLinter-pycodestyle
 // [P] Switch View in Group
-// [P] Text Marker
+// [P] Text Marker (Adapted)
 // [P] ToggleSettings
 
 [
@@ -132,6 +132,7 @@
     // ===== SPACE =====================================================================================================
     { "keys": ["alt+space"], "command": "text_marker" }, // [P] Text Marker
     { "keys": ["alt+shift+space"], "command": "text_marker_clear" }, // [P] Text Marker
+    { "keys": ["primary+alt+shift+space"], "command": "text_marker_reset" }, // [P] Text Marker
 
     // ===== TAB =======================================================================================================
     { "keys": ["ctrl+tab"], "command": "next_view_in_group" },
@@ -251,17 +252,17 @@
     { "keys": ["primary+k", "primary+o", "primary+o"], "command": "toggle_show_open_files" },
     { "keys": ["primary+k", "primary+p"], "command": "sublime_linter_toggle_highlights" },
     { "keys": ["primary+k", "primary+r"], "command": "revert_modification" },
+    { "keys": ["primary+k", "primary+s", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 0 } },
+    { "keys": ["primary+k", "primary+s", "primary+7", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 79 } },
+    { "keys": ["primary+k", "primary+s", "primary+8", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 80 } },
+    { "keys": ["primary+k", "primary+s", "primary+9", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 99 } },
+    { "keys": ["primary+k", "primary+s", "primary+1", "primary+0", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 100 } },
+    { "keys": ["primary+k", "primary+s", "primary+1", "primary+1", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 119 } },
+    { "keys": ["primary+k", "primary+s", "primary+1", "primary+2", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 120 } },
     { "keys": ["primary+k", "primary+t"], "command": "title_case" },
     { "keys": ["primary+k", "primary+u"], "command": "upper_case" },
     { "keys": ["primary+k", "primary+v"], "command": "paste_from_history" },
-    { "keys": ["primary+k", "primary+w", "primary+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
-    { "keys": ["primary+k", "primary+w", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 0 } },
-    { "keys": ["primary+k", "primary+w", "primary+7", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 79 } },
-    { "keys": ["primary+k", "primary+w", "primary+8", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 80 } },
-    { "keys": ["primary+k", "primary+w", "primary+9", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 99 } },
-    { "keys": ["primary+k", "primary+w", "primary+1", "primary+0", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 100 } },
-    { "keys": ["primary+k", "primary+w", "primary+1", "primary+1", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 119 } },
-    { "keys": ["primary+k", "primary+w", "primary+1", "primary+2", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 120 } },
+    { "keys": ["primary+k", "primary+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["primary+k", "primary+x"], "command": "toggle_setting", "args": { "setting": "spell_check" } },
     { "keys": ["primary+k", "primary+y"], "command": "yank" },
     { "keys": ["primary+k", "primary+z"], "command": "wrap_lines" },
@@ -285,7 +286,6 @@
     { "keys": ["primary+k", "primary+shift+c"], "command": "select_theme" },
     { "keys": ["primary+k", "primary+shift+f"], "command": "clang_format" }, // [P] Clang Format
     { "keys": ["primary+k", "primary+shift+g"], "command": "open_file", "args": { "file": "${packages}/User/Default ($platform).sublime-keymap" } },
-    { "keys": ["primary+k", "primary+shift+i"], "command": "goto_reference" },
     { "keys": ["primary+k", "primary+shift+o"], "command": "i_opener" }, // [P] iOpener
     { "keys": ["primary+k", "primary+shift+s"], "command": "save_copy_as" }, // [P] Save Copy As
     { "keys": ["primary+k", "primary+shift+p"], "command": "sublime_linter_panel_toggle" },
@@ -298,6 +298,7 @@
     { "keys": ["primary+alt+a"], "command": "prompt_add_folder" },
     { "keys": ["primary+alt+c"], "command": "close_folder_list" },
     { "keys": ["primary+alt+d"], "command": "exact_quick_find_add_all" }, // [P] Exact Quick Find
+    { "keys": ["primary+alt+i"], "command": "goto_reference" },
     { "keys": ["primary+alt+l"], "command": "split_selection_into_lines" },
     { "keys": ["primary+alt+o"], "command": "toggle_overwrite" },
     { "keys": ["primary+alt+p"], "command": "open_file", "args": {"file": "${packages}/User/Package Control.sublime-settings"} },

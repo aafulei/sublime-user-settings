@@ -1,0 +1,22 @@
+{
+	"user":
+	{
+		"default_colors":
+		[
+			"darkturquoise",
+			"deepskyblue",
+			"springgreen",
+			"coral",
+			"pink",
+			"violet",
+			"palegoldenrod",
+			"gold",
+			"orangered",
+			"deeppink",
+		],
+		"draw_outlined": false,
+		"live": true,
+		"live_color": "darkturquoise",
+		"when_selection_is_empty": false
+	}
+}

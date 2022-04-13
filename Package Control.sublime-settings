@@ -3,6 +3,7 @@
 	"debug": true,
 	"in_process_packages":
 	[
+		"OpenHere"
 	],
 	"installed_packages":
 	[
@@ -34,17 +35,19 @@
 		"RemoteSubl",
 		"Save Copy As",
 		"SideBarTools",
+		"Solarized Color Scheme",
 		"sublime-adapted-plugins",
+		"sublime-text-marker",
 		"SublimeLinter",
 		"SublimeLinter-pycodestyle",
 		"Switch View in Group",
-		"Text Marker",
 		"ToggleSettings",
 		"zzz A File Icon zzz"
 	],
 	"remove_orphaned": true,
 	"repositories":
 	[
-		"https://github.com/aafulei/sublime-adapted-plugins"
+		"https://github.com/aafulei/sublime-adapted-plugins",
+		"https://github.com/aafulei/sublime-text-marker"
 	]
 }
