@@ -7,13 +7,14 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"All Autocomplete",
 		"AutoHotkey",
 		"BetterSwitchHeaderImplementation",
 		"Clang Format",
 		"CMake",
 		"Compare Side-By-Side",
 		"Deselect",
-		"DoxyDoxygen",
+		"DoxyDoc",
 		"Exact Quick Find",
 		"Expand and Edit",
 		"Expand Selection to Line Upwards",
@@ -37,6 +38,7 @@
 		"SublimeLinter",
 		"SublimeLinter-pycodestyle",
 		"Switch View in Group",
+		"Text Marker",
 		"ToggleSettings",
 		"zzz A File Icon zzz"
 	],

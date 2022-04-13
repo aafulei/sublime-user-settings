@@ -1,0 +1,11 @@
+{
+    "exclude_from_completion": [
+        "css",
+        "js"
+    ],
+    "exclude_sources": [
+        "markdown"
+    ],
+    "min_word_size": 5,
+    "max_word_size": 40
+}

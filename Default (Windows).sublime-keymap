@@ -14,25 +14,40 @@
 
 // ===== Packages ======================================================================================================
 // [P] A File Icon
+// [P] All Autocomplete
+// [P] AutoHotkey
+// [P] BetterSwitchHeaderImplementation
 // [P] Change Selection Point (Adapted)
 // [P] Clang Format
+// [P] CMake
 // [P] Compare Side-By-Side
 // [P] Deselect
+// [P] DoxyDoc
+// [P] Exact Quick Find
+// [P] Expand and Edit
 // [P] Expand Selection to Line Upwards
 // [P] Expand Selection to Quotes
+// [P] Fold Comments
 // [P] Goto Last Edit (Adapted)
+// [P] HexViewer
 // [P] iOpener
 // [P] MarkAndMove
 // [P] Move By Paragraph
 // [P] MoveTab
+// [P] OpenHere
 // [P] Origami
 // [P] Package Control
 // [P] PackageResourceViewer
+// [P] PlantUmlDiagrams
+// [P] Pretty JSON
 // [P] Recenter (Adapted)
 // [P] RemoteSubl
 // [P] Save Copy As
 // [P] SideBarTools
+// [P] SublimeLinter
+// [P] SublimeLinter-pycodestyle
 // [P] Switch View in Group
+// [P] Text Marker
 // [P] ToggleSettings
 
 [
@@ -113,6 +128,10 @@
     // ----- find in files ---------------------------------------------------------------------------------------------
     { "keys": ["enter"], "command": "find_all", "context": [ { "key": "panel", "operand": "find_in_files" }, { "key": "panel_has_focus" } ] },
     { "keys": ["primary+alt+enter"], "command": "replace_all", "context": [ { "key": "panel", "operand": "find_in_files" }, { "key": "panel_has_focus" } ] },
+
+    // ===== SPACE =====================================================================================================
+    { "keys": ["alt+space"], "command": "text_marker" }, // [P] Text Marker
+    { "keys": ["alt+shift+space"], "command": "text_marker_clear" }, // [P] Text Marker
 
     // ===== TAB =======================================================================================================
     { "keys": ["ctrl+tab"], "command": "next_view_in_group" },
@@ -217,18 +236,19 @@
     { "keys": ["primary+k", "primary+e", "primary+1", "primary+2", "primary+0"], "command": "set_setting", "args": { "setting": "rulers", "value": [120] } },
     { "keys": ["primary+k", "primary+f"], "command": "reindent", "args": { "single_line": true } },
     { "keys": ["primary+k", "primary+g"], "command": "open_file", "args": { "file": "${packages}/Default/Default ($platform).sublime-keymap" } },
-    { "keys": ["primary+k", "primary+h"], "command": "switch_file", "args": { "extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"] } },
-    // { "keys": ["primary+k", "primary+i", "primary+f"], "command": "open_finder_here" }, // macOS
+    { "keys": ["primary+k", "primary+h"], "command": "switch_file", "args": { "extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"] } }, // [P] BetterSwitchHeaderImplementation
+    { "keys": ["primary+k", "primary+i", "primary+e"], "command": "text_marker_toggle_setting", "args": { "setting": "when_selection_is_empty" } }, // [P] Text Marker
     { "keys": ["primary+k", "primary+i", "primary+h"], "command": "show_panel", "args": { "panel": "replace", "reverse": false, "toggle": true } },
-    // { "keys": ["primary+k", "primary+i", "primary+i"], "command": "open_iterm_here" }, // macOS
-    { "keys": ["primary+k", "primary+i", "primary+m"], "command": "context_menu" },
     { "keys": ["primary+k", "primary+i", "primary+t"], "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" } },
+    { "keys": ["primary+k", "primary+i", "primary+v"], "command": "text_marker_toggle_setting", "args": { "setting": "live" } }, // [P] Text Marker
     { "keys": ["primary+k", "primary+j"], "command": "join_lines" },
     { "keys": ["primary+k", "primary+k"], "command": "recenter" }, // [P] Recenter
     { "keys": ["primary+k", "primary+l"], "command": "lower_case" },
     { "keys": ["primary+k", "primary+m"], "command": "toggle_minimap" },
     { "keys": ["primary+k", "primary+n"], "command": "clone_file" },
-    { "keys": ["primary+k", "primary+o"], "command": "toggle_show_open_files" },
+    // { "keys": ["primary+k", "primary+o", "primary+f"], "command": "open_finder_here" }, // macOS
+    // { "keys": ["primary+k", "primary+o", "primary+i"], "command": "open_iterm_here" }, // macOS
+    { "keys": ["primary+k", "primary+o", "primary+o"], "command": "toggle_show_open_files" },
     { "keys": ["primary+k", "primary+p"], "command": "sublime_linter_toggle_highlights" },
     { "keys": ["primary+k", "primary+r"], "command": "revert_modification" },
     { "keys": ["primary+k", "primary+t"], "command": "title_case" },

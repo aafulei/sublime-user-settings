@@ -105,11 +105,14 @@ Do you want to continue (y/N)? Y
 
 ```
 A File Icon
+All Autocomplete
 AutoHotkey
+BetterSwitchHeaderImplementation
 Clang Format
 CMake
 Compare Side-By-Side
 Deselect
+DoxyDoc
 Exact Quick Find
 Expand and Edit
 Expand Selection to Line Upwards
@@ -133,6 +136,7 @@ sublime-adapted-plugins
 SublimeLinter
 SublimeLinter-pycodestyle
 Switch View in Group
+Text Marker
 ToggleSettings
 ```
 

@@ -1,0 +1,26 @@
+{
+	"user":
+	{
+		"default_colors":
+		[
+			"darkgoldenrod",
+			"darkmagenta",
+			"darkolivegreen",
+			"darkslateblue",
+			"darkslategray",
+			"darkviolet",
+			"darkblue",
+			"darkturquoise",
+			"darkgray",
+			"darkkhaki",
+			"darkorange",
+			"darksalmon",
+			"darkseagreen",
+			"brown"
+		],
+		"draw_outlined": false,
+		"live": true,
+		"live_color": "darkturquoise",
+		"when_selection_is_empty": false
+	}
+}
