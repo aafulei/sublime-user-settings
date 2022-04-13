@@ -16,6 +16,7 @@
 // [P] A File Icon
 // [P] Change Selection Point (Adapted)
 // [P] Clang Format
+// [P] Compare Side-By-Side
 // [P] Deselect
 // [P] Expand Selection to Line Upwards
 // [P] Expand Selection to Quotes
@@ -230,17 +231,18 @@
     { "keys": ["primary+k", "primary+o"], "command": "toggle_show_open_files" },
     { "keys": ["primary+k", "primary+p"], "command": "sublime_linter_toggle_highlights" },
     { "keys": ["primary+k", "primary+r"], "command": "revert_modification" },
-    { "keys": ["primary+k", "primary+s"], "command": "toggle_setting", "args": { "setting": "spell_check" } },
     { "keys": ["primary+k", "primary+t"], "command": "title_case" },
     { "keys": ["primary+k", "primary+u"], "command": "upper_case" },
     { "keys": ["primary+k", "primary+v"], "command": "paste_from_history" },
     { "keys": ["primary+k", "primary+w", "primary+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
+    { "keys": ["primary+k", "primary+w", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 0 } },
     { "keys": ["primary+k", "primary+w", "primary+7", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 79 } },
     { "keys": ["primary+k", "primary+w", "primary+8", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 80 } },
     { "keys": ["primary+k", "primary+w", "primary+9", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 99 } },
     { "keys": ["primary+k", "primary+w", "primary+1", "primary+0", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 100 } },
     { "keys": ["primary+k", "primary+w", "primary+1", "primary+1", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 119 } },
     { "keys": ["primary+k", "primary+w", "primary+1", "primary+2", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 120 } },
+    { "keys": ["primary+k", "primary+x"], "command": "toggle_setting", "args": { "setting": "spell_check" } },
     { "keys": ["primary+k", "primary+y"], "command": "yank" },
     { "keys": ["primary+k", "primary+z"], "command": "wrap_lines" },
     { "keys": ["primary+k", "primary+;"], "command": "expand_swap_word" }, // [P] Expand and Edit
@@ -302,6 +304,7 @@
     { "keys": ["alt+d"], "command": "expand_selection_to_subword" },
     // ----- "alt+e" is tied to giving accents (e.g. é) in macOS -------------------------------------------------------
     { "keys": ["alt+f"], "command": "exact_quick_find_flip_find_flags" }, // [P] Exact Quick Find
+    { "keys": ["alt+g"], "command": "next_result" },
     { "keys": ["alt+h"], "command": "select_lines", "args": { "forward": true } },
     { "keys": ["alt+i"], "command": "prev_modification" },
     { "keys": ["alt+j"], "command": "jump_back" },
@@ -334,6 +337,7 @@
     { "keys": ["alt+0"], "command": "select_by_index", "args": { "index": 9 } },
 
     // ===== ALT + SHIFT + Family ======================================================================================
+    { "keys": ["alt+shift+g"], "command": "prev_result" },
     { "keys": ["alt+shift+["], "command": "move_tab", "args": { "position": "-1" } }, // [P] MoveTab
     { "keys": ["alt+shift+]"], "command": "move_tab", "args": { "position": "+1" } }, // [P] MoveTab
     { "keys": ["alt+shift+`"], "command": "set_layout", "args": { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [ [0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2] ] } },
