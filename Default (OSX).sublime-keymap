@@ -286,6 +286,7 @@
     { "keys": ["primary+k", "primary+shift+c"], "command": "select_theme" },
     { "keys": ["primary+k", "primary+shift+f"], "command": "clang_format" }, // [P] Clang Format
     { "keys": ["primary+k", "primary+shift+g"], "command": "open_file", "args": { "file": "${packages}/User/Default ($platform).sublime-keymap" } },
+    { "keys": ["primary+k", "primary+shift+j"], "command": "pretty_json" }, // [P] Pretty JSON
     { "keys": ["primary+k", "primary+shift+o"], "command": "i_opener" }, // [P] iOpener
     { "keys": ["primary+k", "primary+shift+s"], "command": "save_copy_as" }, // [P] Save Copy As
     { "keys": ["primary+k", "primary+shift+p"], "command": "sublime_linter_panel_toggle" },
