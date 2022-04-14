@@ -141,6 +141,12 @@ Switch View in Group
 ToggleSettings
 ```
 
+### External Dependencies
+
+- `Clang Format` depends on `clang-format`
+- `Pretty JSON` depends on `jq`
+- `SublimeLinter-pycodestyle` depends on `pycodestyle`
+
 ## Sublime Text Version
 
 ```
