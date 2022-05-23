@@ -250,7 +250,7 @@
     { "keys": ["primary+k", "primary+o", "primary+f"], "command": "open_finder_here" }, // macOS
     { "keys": ["primary+k", "primary+o", "primary+i"], "command": "open_iterm_here" }, // macOS
     { "keys": ["primary+k", "primary+o", "primary+o"], "command": "toggle_show_open_files" },
-    { "keys": ["primary+k", "primary+p"], "command": "sublime_linter_toggle_highlights" },
+    { "keys": ["primary+k", "primary+p"], "command": "sublime_linter_toggle_highlights" }, // [P] SublimeLinter
     { "keys": ["primary+k", "primary+r"], "command": "revert_modification" },
     { "keys": ["primary+k", "primary+s", "primary+0"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 0 } },
     { "keys": ["primary+k", "primary+s", "primary+7", "primary+9"], "command": "set_setting", "args": { "setting": "wrap_width", "value": 79 } },
@@ -289,7 +289,7 @@
     { "keys": ["primary+k", "primary+shift+j"], "command": "pretty_json" }, // [P] Pretty JSON
     { "keys": ["primary+k", "primary+shift+o"], "command": "i_opener" }, // [P] iOpener
     { "keys": ["primary+k", "primary+shift+s"], "command": "save_copy_as" }, // [P] Save Copy As
-    { "keys": ["primary+k", "primary+shift+p"], "command": "sublime_linter_panel_toggle" },
+    { "keys": ["primary+k", "primary+shift+p"], "command": "sublime_linter_panel_toggle" }, // [P] SublimeLinter
     { "keys": ["primary+k", "primary+shift+u"], "command": "permute_lines", "args": { "operation": "unique" } },
     { "keys": ["primary+k", "primary+shift+z"], "command": "cancel_swap" }, // [P] Expand and Edit
     { "keys": ["primary+k", "primary+shift+;"], "command": "expand_paste_word" }, // [P] Expand and Edit
