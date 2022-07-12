@@ -34,9 +34,8 @@
 		"RemoteSubl",
 		"Save Copy As",
 		"SideBarTools",
-		"Solarized Color Scheme",
 		"sublime-adapted-plugins",
-		"sublime-text-marker",
+		"sublime-adapted-text-marker",
 		"SublimeLinter",
 		"SublimeLinter-pycodestyle",
 		"Switch View in Group",
@@ -47,6 +46,6 @@
 	"repositories":
 	[
 		"https://github.com/aafulei/sublime-adapted-plugins",
-		"https://github.com/aafulei/sublime-text-marker"
+		"https://github.com/aafulei/sublime-adapted-text-marker.git"
 	]
 }

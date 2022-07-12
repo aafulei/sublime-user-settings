@@ -132,9 +132,8 @@ Pretty JSON
 RemoteSubl
 Save Copy As
 SideBarTools
-Solarized Color Scheme
 sublime-adapted-plugins
-sublime-text-marker
+sublime-adapted-text-marker
 SublimeLinter
 SublimeLinter-pycodestyle
 Switch View in Group
