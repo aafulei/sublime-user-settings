@@ -5,7 +5,7 @@
     "ensure_ascii": false,
     "line_separator": ",",
     "value_separator": ": ",
-    "keep_arrays_single_line": true,
+    "keep_arrays_single_line": false,
     "max_arrays_line_length": 80,
     "pretty_on_save": false,
     "validate_on_save": false,
