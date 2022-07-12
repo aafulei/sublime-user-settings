@@ -1,6 +1,6 @@
-# My User Settings for Sublime Text
+# My User Settings for Sublime Text 3
 
-The `User` directory of my Sublime Text, including
+The `User` directory of my Sublime Text 3, including
 
 1. Key Bindings
 2. Preferences
@@ -146,7 +146,7 @@ ToggleSettings
 - `Pretty JSON` depends on `jq`
 - `SublimeLinter-pycodestyle` depends on `pycodestyle`
 
-## Sublime Text Version
+## Sublime Text 3 Version
 
 ```
 Version 3.2.2 (Build 3211) 1 October 2019
