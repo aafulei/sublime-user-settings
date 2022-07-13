@@ -9,6 +9,7 @@
 		"A File Icon",
 		"All Autocomplete",
 		"AutoHotkey",
+		"AutoPEP8",
 		"BetterSwitchHeaderImplementation",
 		"Clang Format",
 		"CMake",
@@ -22,6 +23,7 @@
 		"Fold Comments",
 		"HexViewer",
 		"iOpener",
+		"LSP",
 		"MarkAndMove",
 		"Move By Paragraph",
 		"MoveTab",
@@ -39,6 +41,7 @@
 		"SublimeLinter",
 		"SublimeLinter-pycodestyle",
 		"Switch View in Group",
+		"SyncedSideBar",
 		"ToggleSettings",
 		"zzz A File Icon zzz"
 	],

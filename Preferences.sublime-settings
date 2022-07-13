@@ -1,12 +1,13 @@
 {
 	"caret_style": "solid",
-	"close_windows_when_empty": false,
+	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -15,7 +16,16 @@
 	],
 	"rulers":
 	[
-		80
+		79,
+		80,
+		99,
+		100,
+		119,
+		120,
+		139,
+		140,
+		159,
+		160
 	],
 	"scroll_past_end": true,
 	"show_full_path": true,

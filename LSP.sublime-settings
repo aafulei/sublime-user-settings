@@ -1,0 +1,26 @@
+{
+    "auto_show_diagnostics_panel": "never",
+    "auto_show_diagnostics_panel_level": 0,
+    "clients": {
+        "clangd": {
+            "command": [
+                "clangd",
+                "--background-index",
+                "--clang-tidy",
+                "--enable-config",
+                "--fallback-style=llvm",
+                "--function-arg-placeholders"
+            ],
+            "enabled": true
+        }
+    },
+    "diagnostics_gutter_marker": "dot",
+    "document_highlight_style": "fill",
+    "show_code_actions_bulb": true,
+    "show_diagnostics_count_in_view_status": true,
+    "show_diagnostics_in_view_status": true,
+    "show_symbol_action_links": true,
+    "show_view_status": true,
+  "show_references_in_quick_panel": true
+
+}

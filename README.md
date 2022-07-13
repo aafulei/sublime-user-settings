@@ -107,6 +107,7 @@ Do you want to continue (y/N)? Y
 A File Icon
 All Autocomplete
 AutoHotkey
+AutoPEP8
 BetterSwitchHeaderImplementation
 Clang Format
 CMake
@@ -120,6 +121,7 @@ Expand Selection to Quotes
 Fold Comments
 HexViewer
 iOpener
+LSP
 MarkAndMove
 Move By Paragraph
 MoveTab
@@ -137,6 +139,7 @@ sublime-adapted-text-marker
 SublimeLinter
 SublimeLinter-pycodestyle
 Switch View in Group
+SyncedSideBar
 ToggleSettings
 ```
 

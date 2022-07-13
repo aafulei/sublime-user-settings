@@ -1,0 +1,11 @@
+{
+    "max-line-length": 79,
+    "indent-size": 4,
+    "hang-closing": false,
+    "format_on_save": false,
+    "show_output_panel": true,
+    "syntax_list": [
+        "Python",
+        "Python Django"
+    ]
+}

@@ -1,0 +1,8 @@
+[
+    // mousemap does not support context
+    {
+        "button": "button3",
+        "count": 1,
+        "command": "lsp_symbol_definition"
+    }
+]
